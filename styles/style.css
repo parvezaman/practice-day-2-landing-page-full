@@ -58,8 +58,8 @@ nav{
                 First section start
 ----------------------------------------------- */
 .container{
-    width: 870px;
-    height: 679px;
+    /* width: 870px;
+    height: 679px; */
     /* margin: 36px 285px 30px 285px; */
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -216,13 +216,17 @@ hr{
 /* media query start */
 
 @media only screen and (max-width:688px) {
+    header{
+        width: 100%;
+        margin: auto;
+    }
     nav{
         width: 100%;
 
     }
     .container{
-        width: 100%;
-        margin: 0;
+        width: 700px;
+        margin: auto;
     }
     .players, .blogs{
         display: grid;
@@ -230,12 +234,18 @@ hr{
     }
     .only-in-688{
         position: relative;
-        top:510px;
+        top:0px;
     }
     .latest-courses{
         position: relative;
-        top:500px;
+        top:5px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .the-last-container{
+        position: relative;
+        top: 100px;
+        width: 688px;
+        height: 1000px;
     }
 }
