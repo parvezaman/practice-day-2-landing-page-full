@@ -60,10 +60,16 @@ nav{
 .container{
     width: 870px;
     height: 679px;
-    margin: 36px 285px 30px 285px;
+    /* margin: 36px 285px 30px 285px; */
     background-color: #FFFFFF;
     border-radius: 5px;
     padding: 33px 50px 42px 30px;
+    /* display: block; */
+    /* align-items: center;
+    justify-content: center; */
+    margin: auto;
+    margin-bottom: 35px;
+    width: 60%;
 }
 
 /* top player design */
@@ -134,7 +140,12 @@ hr{
                 Last section start
 ----------------------------------------------- */
 .the-last-container{
-    height: 362px;
+    height: 400px;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 33px 50px 42px 30px;
 }
 .latest-courses{
     display: inline-flex;
@@ -193,8 +204,38 @@ hr{
     display: flex;
     align-items: center;
 }
+/* .only-in-688{
+    visibility: hidden;
+    display: none;
+} */
 
 
 /*------------------------------------------- 
                 Last section end
 ----------------------------------------------- */
+/* media query start */
+
+@media only screen and (max-width:688px) {
+    nav{
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    .players, .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .only-in-688{
+        position: relative;
+        top:510px;
+    }
+    .latest-courses{
+        position: relative;
+        top:500px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
